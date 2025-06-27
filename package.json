@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ido-leybo.github.io/pausa-menu-magic",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
