@@ -16,18 +16,18 @@ const Index = () => {
   ];
 
   const salads: MenuItemType[] = [
-    { name: 'יווני', price: '₪38' , image: 'greece_salad.jpeg'},
+    { name: 'יווני', price: '₪38' , image: 'greek_salad_2.jpeg'},
     { name: 'קיסר', price: '₪38' },
-    { name: 'קפרזה', price: '₪38', image: 'kapreza.jpeg' },
+    { name: 'קפרזה', price: '₪38', image: 'kapreza_2.jpeg' },
   ];
 
   const pastries: MenuItemType[] = [
-    { name: 'שוקולד צ\'יפס', price: '₪18' },
-    { name: 'בראוניז', price: '₪8' },
-    { name: 'רוגלך', price: '₪5' },
+    { name: 'שוקולד צ\'יפס', price: '₪18', image: 'chocolate_chips.jpeg' },
+    { name: 'בראוניז', price: '₪8', image: 'brownies.jpeg' },
+    { name: 'רוגלך', price: '₪5', image: 'rogalach.jpeg' },
     { name: 'סינבון', price: '₪22' },
     { name: 'עוגת גזר', price: '₪18' },
-    { name: 'עוגת גבינה', price: '₪36' },
+    { name: 'עוגת גבינה', price: '₪36', image: 'cheese_cake.jpeg' },
     { name: 'עוגת טופי קראנצ׳', price: '₪18' },
   ];
 
