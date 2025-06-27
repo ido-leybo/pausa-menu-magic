@@ -1,7 +1,8 @@
 
 import React from 'react';
 import MenuHeader from '@/components/MenuHeader';
-import MenuCategory from '@/components/MenuCategory';
+import CategorySlider from '@/components/CategorySlider';
+import HamburgerMenu from '@/components/HamburgerMenu';
 import { type MenuItemType } from '@/components/MenuCategory';
 
 const Index = () => {
@@ -72,26 +73,88 @@ const Index = () => {
     { name: 'מים בטעמים', price: '₪12' },
   ];
 
+  // Categories for navigation
+  const categories = [
+    { id: 'sandwiches', title: 'לחם עם שדרוג', emoji: '🥪' },
+    { id: 'salads', title: 'ירוקים אבל טעימים', emoji: '🥗' },
+    { id: 'pastries', title: 'חובה ליד הקפה', emoji: '🍪' },
+    { id: 'pizzas', title: 'חם, עגול וטעים', emoji: '🍕' },
+    { id: 'coffee', title: 'קפה ומשקאות חמים', emoji: '☕' },
+    { id: 'tea', title: 'תה', emoji: '🍵' },
+    { id: 'fresh-juices', title: 'טבעי, טרי, טעים', emoji: '🍹' },
+    { id: 'cold-drinks', title: 'פשוט משקאות קרים', emoji: '🧊' },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-cafe-light to-white">
-      <div className="container max-w-3xl mx-auto px-4 py-8">
+      <HamburgerMenu categories={categories} />
+      
+      <div className="container max-w-4xl mx-auto px-4 py-8">
         <MenuHeader />
         
-        <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
+        <div className="bg-white rounded-lg shadow-lg p-4 md:p-8">
           <div className="mb-8">
-            <h2 className="text-2xl font-serif font-bold text-center mb-6 text-cafe-dark">אוכל</h2>
-            <MenuCategory title="לחם עם שדרוג" emoji="🥪" items={sandwiches} />
-            <MenuCategory title="ירוקים אבל טעימים" emoji="🥗" items={salads} />
-            <MenuCategory title="חובה ליד הקפה" emoji="🍪" items={pastries} />
-            <MenuCategory title="חם, עגול וטעים" emoji="🍕" items={pizzas} />
+            <h2 className="text-2xl font-serif font-bold text-center mb-8 text-cafe-dark">אוכל</h2>
+            
+            <CategorySlider 
+              id="sandwiches"
+              title="לחם עם שדרוג" 
+              emoji="🥪" 
+              items={sandwiches} 
+            />
+            
+            <CategorySlider 
+              id="salads"
+              title="ירוקים אבל טעימים" 
+              emoji="🥗" 
+              items={salads} 
+            />
+            
+            <CategorySlider 
+              id="pastries"
+              title="חובה ליד הקפה" 
+              emoji="🍪" 
+              items={pastries} 
+            />
+            
+            <CategorySlider 
+              id="pizzas"
+              title="חם, עגול וטעים" 
+              emoji="🍕" 
+              items={pizzas} 
+            />
           </div>
           
           <div>
-            <h2 className="text-2xl font-serif font-bold text-center mb-6 text-cafe-dark">שתייה</h2>
-            <MenuCategory title="קפה ומשקאות חמים" emoji="☕" items={coffee} />
-            <MenuCategory title="תה" emoji="🍵" items={tea} />
-            <MenuCategory title="טבעי, טרי, טעים" emoji="🍹" items={freshJuices} />
-            <MenuCategory title="פשוט משקאות קרים" emoji="🧊" items={coldDrinks} />
+            <h2 className="text-2xl font-serif font-bold text-center mb-8 text-cafe-dark">שתייה</h2>
+            
+            <CategorySlider 
+              id="coffee"
+              title="קפה ומשקאות חמים" 
+              emoji="☕" 
+              items={coffee} 
+            />
+            
+            <CategorySlider 
+              id="tea"
+              title="תה" 
+              emoji="🍵" 
+              items={tea} 
+            />
+            
+            <CategorySlider 
+              id="fresh-juices"
+              title="טבעי, טרי, טעים" 
+              emoji="🍹" 
+              items={freshJuices} 
+            />
+            
+            <CategorySlider 
+              id="cold-drinks"
+              title="פשוט משקאות קרים" 
+              emoji="🧊" 
+              items={coldDrinks} 
+            />
           </div>
         </div>
         
