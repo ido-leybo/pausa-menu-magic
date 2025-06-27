@@ -16,9 +16,9 @@ const Index = () => {
   ];
 
   const salads: MenuItemType[] = [
-    { name: 'יווני', price: '₪38' },
+    { name: 'יווני', price: '₪38' , image: 'greece_salad.jpeg'},
     { name: 'קיסר', price: '₪38' },
-    { name: 'קפרזה', price: '₪38' },
+    { name: 'קפרזה', price: '₪38', image: 'kapreza.jpeg' },
   ];
 
   const pastries: MenuItemType[] = [
@@ -34,11 +34,11 @@ const Index = () => {
   const pizzas: MenuItemType[] = [
     { name: 'מרגריטה', price: '₪54' },
     { name: 'ספייסי', price: '₪60' },
-    { name: 'פאוזה', price: '₪60' },
+    { name: 'פאוזה', price: '₪60', image: 'pizza.jpeg' },
   ];
 
   const coffee: MenuItemType[] = [
-    { name: 'קפה הפוך', price: '₪14' },
+    { name: 'קפה הפוך', price: '₪14 / ₪18' },
     { name: 'אספרסו / כפול', price: '₪10 / ₪12' },
     { name: 'אמריקנו חם', price: '₪12' },
     { name: 'אמריקנו קר', price: '₪14' },
@@ -75,14 +75,14 @@ const Index = () => {
 
   // Categories for navigation
   const categories = [
-    { id: 'sandwiches', title: 'לחם עם שדרוג', emoji: '🥪' },
-    { id: 'salads', title: 'ירוקים אבל טעימים', emoji: '🥗' },
-    { id: 'pastries', title: 'חובה ליד הקפה', emoji: '🍪' },
-    { id: 'pizzas', title: 'חם, עגול וטעים', emoji: '🍕' },
-    { id: 'coffee', title: 'קפה ומשקאות חמים', emoji: '☕' },
+    { id: 'sandwiches', title: 'כריכים/טוסטים', emoji: '🥪' },
+    { id: 'salads', title: 'סלטים', emoji: '🥗' },
+    { id: 'pastries', title: 'מאפים/קינוחים', emoji: '🍪' },
+    { id: 'pizzas', title: 'פיצות', emoji: '🍕' },
+    { id: 'coffee', title: 'משקאות חמים', emoji: '☕' },
     { id: 'tea', title: 'תה', emoji: '🍵' },
-    { id: 'fresh-juices', title: 'טבעי, טרי, טעים', emoji: '🍹' },
-    { id: 'cold-drinks', title: 'פשוט משקאות קרים', emoji: '🧊' },
+    { id: 'fresh-juices', title: 'משקאות סחוטים', emoji: '🍹' },
+    { id: 'cold-drinks', title: 'שתייה קלה', emoji: '🧊' },
   ];
 
   return (
