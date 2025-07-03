@@ -89,10 +89,10 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-cafe-light to-white">
       <HamburgerMenu categories={categories} />
       
-      <div className="container max-w-4xl mx-auto px-4 py-8">
+      <div className="container max-w-4xl mx-auto px-2 py-8">
         <MenuHeader />
         
-        <div className="bg-white rounded-lg shadow-lg p-4 md:p-8">
+        <div className="bg-white rounded-lg shadow-lg p-2 md:p-8">
           <div className="mb-8">
             <h2 className="text-2xl font-serif font-bold text-center mb-8 text-cafe-dark">אוכל</h2>
             
