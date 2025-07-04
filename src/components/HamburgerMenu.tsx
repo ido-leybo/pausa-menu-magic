@@ -27,8 +27,8 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ categories }) => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <button className="fixed top-4 right-4 z-50 bg-cafe-brown text-white p-3 rounded-full shadow-lg hover:bg-cafe-dark transition-colors">
-          <Menu size={24} />
+      <button className="fixed top-4 right-4 z-50 bg-cafe-brown text-white p-3 rounded-full shadow-lg hover:bg-cafe-dark transition-colors">
+      <Menu size={24} />
         </button>
       </SheetTrigger>
       <SheetContent side="right" className="w-80 bg-white">

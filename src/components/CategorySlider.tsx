@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { type MenuItemType } from './MenuCategory';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 
-import { type MenuItemType } from './MenuCategory';
 
 interface CategorySliderProps {
   title: string;
@@ -29,6 +29,7 @@ const CategorySlider: React.FC<CategorySliderProps> = ({ title, emoji, items, id
 
   return (
     <>
+
     <section id={id} className="mb-6 scroll-mt-20">
       <div className="flex items-center gap-2 border-b-2 border-cafe-cream pb-2 mb-6">
         <span className="text-2xl">{emoji}</span>
@@ -46,14 +47,14 @@ const CategorySlider: React.FC<CategorySliderProps> = ({ title, emoji, items, id
           {items.map((item, index) => (
             <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/4 lg:basis-1/5">
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"  onClick={() => handleItemClick(item)}>
-                {item.image ? (<div className="h-36">
+              {item.image ? (<div className="h-36">
                   <img
                     src={new URL(`../assets/${item.image}`, import.meta.url).href}
                     alt={item.name}
                     className="w-full h-full object-cover"
                   />
                 </div>) : <div className="h-36 bg-gradient-to-br from-cafe-light to-cafe-cream flex items-center justify-center">
-                  <span className="text-4xl opacity-60">{emoji}</span>
+                <span className="text-4xl opacity-60">{emoji}</span>
                 </div>}
                 <div className="p-2">
                   <div className="flex items-center gap-1 mb-2">
@@ -63,10 +64,6 @@ const CategorySlider: React.FC<CategorySliderProps> = ({ title, emoji, items, id
                   <div className="flex justify-between items-center">
                     <span className="font-bold text-cafe-brown text-lg">{item.price}</span>
                   </div>
-                )}
-                
-                <div className="text-right border-t pt-4">
-                  <span className="text-2xl font-bold text-cafe-brown">{selectedItem.price}</span>
                 </div>
               </div>
             </CarouselItem>
@@ -76,7 +73,7 @@ const CategorySlider: React.FC<CategorySliderProps> = ({ title, emoji, items, id
         <CarouselNext className="hidden md:flex" />
       </Carousel>
     </section>
-     <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+    <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
      <DialogContent className="max-w-[90%] sm:max-w-md mx-auto rounded-lg">
        {selectedItem && (
          <>
@@ -103,7 +100,7 @@ const CategorySlider: React.FC<CategorySliderProps> = ({ title, emoji, items, id
                  <p className="text-muted-foreground">{selectedItem.description}</p>
                </div>
              )}
-             
+
              <div className="text-right border-t pt-4">
                <span className="text-2xl font-bold text-cafe-brown">{selectedItem.price}</span>
              </div>
@@ -112,7 +109,7 @@ const CategorySlider: React.FC<CategorySliderProps> = ({ title, emoji, items, id
        )}
      </DialogContent>
    </Dialog>
-   </>
+    </>
   );
 };
 
