@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
+
 import { type MenuItemType } from './MenuCategory';
 
 interface CategorySliderProps {
@@ -62,6 +63,10 @@ const CategorySlider: React.FC<CategorySliderProps> = ({ title, emoji, items, id
                   <div className="flex justify-between items-center">
                     <span className="font-bold text-cafe-brown text-lg">{item.price}</span>
                   </div>
+                )}
+                
+                <div className="text-right border-t pt-4">
+                  <span className="text-2xl font-bold text-cafe-brown">{selectedItem.price}</span>
                 </div>
               </div>
             </CarouselItem>
