@@ -5,7 +5,6 @@ import MenuItem from './MenuItem';
 export type MenuItemType = {
   name: string;
   price: string;
-  image?: string;
   description?: string;
   isVegan?: boolean;
 };
