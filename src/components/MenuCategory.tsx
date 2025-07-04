@@ -20,7 +20,7 @@ const MenuCategory: React.FC<MenuCategoryProps> = ({ title, emoji, items }) => {
     <section className="mb-12">
       <div className="flex items-center gap-2 border-b-2 border-cafe-cream pb-2 mb-6">
         <span className="text-2xl">{emoji}</span>
-        <h2 className="text-2xl font-serif font-semibold text-cafe-brown">{title}</h2>
+        <h2 className="text-2xl font-sans font-semibold text-cafe-brown">{title}</h2>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

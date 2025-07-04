@@ -27,14 +27,14 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ categories }) => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <button className="fixed top-4 left-4 z-50 bg-cafe-brown text-white p-3 rounded-full shadow-lg hover:bg-cafe-dark transition-colors">
+        <button className="fixed top-4 right-4 z-50 bg-cafe-brown text-white p-3 rounded-full shadow-lg hover:bg-cafe-dark transition-colors">
           <Menu size={24} />
         </button>
       </SheetTrigger>
       <SheetContent side="right" className="w-80 bg-white">
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-4 border-b">
-            <h2 className="text-xl font-serif font-bold text-cafe-dark">תפריט</h2>
+            <h2 className="text-xl font-sans font-bold text-cafe-dark">תפריט</h2>
           </div>
           
           <nav className="flex-1 overflow-y-auto">
