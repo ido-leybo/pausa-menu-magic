@@ -16,29 +16,29 @@ const Index = () => {
   ];
 
   const salads: MenuItemType[] = [
-    { name: 'יווני', price: '₪38' , image: 'greek_salad_2.jpeg'},
+    { name: 'יווני', price: '₪38' },
     { name: 'קיסר', price: '₪38' },
-    { name: 'קפרזה', price: '₪38', image: 'kapreza_2.jpeg' },
+    { name: 'קפרזה', price: '₪38' },
   ];
 
   const pastries: MenuItemType[] = [
-    { name: 'שוקולד צ\'יפס', price: '₪18', image: 'chocolate_chips.jpeg' },
-    { name: 'בראוניז', price: '₪8', image: 'brownies.jpeg' },
-    { name: 'רוגלך', price: '₪5', image: 'rogalach.jpeg' },
+    { name: 'שוקולד צ\'יפס', price: '₪18' },
+    { name: 'בראוניז', price: '₪8' },
+    { name: 'רוגלך', price: '₪5' },
     { name: 'סינבון', price: '₪22' },
     { name: 'עוגת גזר', price: '₪18' },
-    { name: 'עוגת גבינה', price: '₪36', image: 'cheese_cake.jpeg' },
+    { name: 'עוגת גבינה', price: '₪36' },
     { name: 'עוגת טופי קראנצ׳', price: '₪18' },
   ];
 
   const pizzas: MenuItemType[] = [
     { name: 'מרגריטה', price: '₪54' },
     { name: 'ספייסי', price: '₪60' },
-    { name: 'פאוזה', price: '₪60', image: 'pizza.jpeg' },
+    { name: 'פאוזה', price: '₪60' },
   ];
 
   const coffee: MenuItemType[] = [
-    { name: 'קפה הפוך', price: '₪14 / ₪18' },
+    { name: 'קפה הפוך', price: '₪14' },
     { name: 'אספרסו / כפול', price: '₪10 / ₪12' },
     { name: 'אמריקנו חם', price: '₪12' },
     { name: 'אמריקנו קר', price: '₪14' },
@@ -75,24 +75,24 @@ const Index = () => {
 
   // Categories for navigation
   const categories = [
-    { id: 'sandwiches', title: 'כריכים/טוסטים', emoji: '🥪' },
-    { id: 'salads', title: 'סלטים', emoji: '🥗' },
-    { id: 'pastries', title: 'מאפים/קינוחים', emoji: '🍪' },
-    { id: 'pizzas', title: 'פיצות', emoji: '🍕' },
-    { id: 'coffee', title: 'משקאות חמים', emoji: '☕' },
+    { id: 'sandwiches', title: 'לחם עם שדרוג', emoji: '🥪' },
+    { id: 'salads', title: 'ירוקים אבל טעימים', emoji: '🥗' },
+    { id: 'pastries', title: 'חובה ליד הקפה', emoji: '🍪' },
+    { id: 'pizzas', title: 'חם, עגול וטעים', emoji: '🍕' },
+    { id: 'coffee', title: 'קפה ומשקאות חמים', emoji: '☕' },
     { id: 'tea', title: 'תה', emoji: '🍵' },
-    { id: 'fresh-juices', title: 'משקאות סחוטים', emoji: '🍹' },
-    { id: 'cold-drinks', title: 'שתייה קלה', emoji: '🧊' },
+    { id: 'fresh-juices', title: 'טבעי, טרי, טעים', emoji: '🍹' },
+    { id: 'cold-drinks', title: 'פשוט משקאות קרים', emoji: '🧊' },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cafe-light to-white">
       <HamburgerMenu categories={categories} />
       
-      <div className="container max-w-4xl mx-auto px-2 py-8">
+      <div className="container max-w-4xl mx-auto px-4 py-8">
         <MenuHeader />
         
-        <div className="bg-white rounded-lg shadow-lg p-2 md:p-8">
+        <div className="bg-white rounded-lg shadow-lg p-4 md:p-8">
           <div className="mb-8">
             <h2 className="text-2xl font-serif font-bold text-center mb-8 text-cafe-dark">אוכל</h2>
             
