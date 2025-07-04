@@ -8,7 +8,7 @@ import { type MenuItemType } from '@/components/MenuCategory';
 const Index = () => {
   // Menu data
   const sandwiches: MenuItemType[] = [
-    { name: 'כריך טונה', price: '₪38' },
+    { name: 'כריך טונה', price: '₪38', description: 'חסה לאליק, עגבניות, סלט טונה' },
     { name: 'כריך אבוקדו', price: '₪38', isVegan: true },
     { name: 'כריך קפרזה', price: '₪38' },
     { name: 'כריך קממבר', price: '₪38' },
@@ -94,7 +94,7 @@ const Index = () => {
         
         <div className="bg-white rounded-lg shadow-lg p-2 md:p-8">
           <div className="mb-8">
-            <h2 className="text-2xl font-serif font-bold text-center mb-8 text-cafe-dark">אוכל</h2>
+            <h2 className="text-2xl font-sans font-bold text-center mb-8 text-cafe-dark">אוכל</h2>
             
             <CategorySlider 
               id="sandwiches"
@@ -117,16 +117,16 @@ const Index = () => {
               items={pastries} 
             />
             
-            <CategorySlider 
+            {/* <CategorySlider 
               id="pizzas"
               title="חם, עגול וטעים" 
               emoji="🍕" 
               items={pizzas} 
-            />
+            /> */}
           </div>
           
           <div>
-            <h2 className="text-2xl font-serif font-bold text-center mb-8 text-cafe-dark">שתייה</h2>
+            <h2 className="text-2xl font-sans font-bold text-center mb-8 text-cafe-dark">שתייה</h2>
             
             <CategorySlider 
               id="coffee"
