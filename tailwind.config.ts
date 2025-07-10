@@ -59,6 +59,10 @@ export default {
 					brown: '#8B5A2B',
 					dark: '#3E2723'
 				},
+				newBg: {
+					lightgreen: '#7396B6',
+					brown: '#8b5a2b'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
